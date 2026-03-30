@@ -21,6 +21,7 @@ nav a {
     padding: 5px 10px;
 }
 
+
 .selecionadoMenu {
     background: #18212b;
     border-radius: 8px;
@@ -29,6 +30,12 @@ nav a {
 aside {
     background: #ecf0f1;
     padding: 15px;
+    min-height: 100vh;
+}
+
+.menu-lateral {
+    position: sticky;
+    top: 20px;
 }
 
 main {
@@ -62,7 +69,7 @@ footer {
     padding: 10px;
 }
 
-a:hover {
+a:not(.categoria-a):hover {
     background-color: rgb(38, 49, 61);
     border-radius: 8px;
 }
@@ -70,6 +77,13 @@ a:hover {
 a {
     transition: 0.5s;
     /* Suaviza a transição */
+
+}
+
+.categoria-a {
+    text-decoration: none;
+    /* tira o sublinhado */
+    color: black;
 }
 
 .icon {
@@ -98,6 +112,6 @@ button {
     gap: 10px;
 }
 
-button:hover{
+button:hover {
     background-color: #1f2c3a;
 }
